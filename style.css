@@ -1,0 +1,287 @@
+@page {
+    size: A4;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 5px 0px;
+    padding: 0;
+
+}
+
+* {
+    /* margin: 5px 0px; */
+}
+
+.left-third *,
+.right-two-third * {
+    margin: 5px 0px;
+}
+
+.container {
+    width: 1024px;
+    height: 1754px;
+    padding: auto;
+    margin: auto;
+    box-sizing: border-box;
+    border: solid 2px var(--my-color);
+    position: relative
+}
+
+:root {
+    --my-color: hsl(30, 15.19%, 30.98%);
+    --color-text: hsl(35deg 10.34% 54.51%);
+}
+
+.banner {
+    background-image: url('/img/img-bn.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid 1px black;
+    margin: 0;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.title-header {
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    right: -100px;
+}
+
+.title-header h3 {
+    position: relative;
+    display: inline-block;
+    padding: 40px 10px 4px 10px;
+    background-color: var(--my-color);
+    color: white;
+}
+
+.title-header h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px 22px 0px;
+    border-style: solid;
+    border-color: var(--my-color) transparent transparent transparent;
+}
+
+.header {
+    margin-top: -60px;
+}
+
+.header p,
+.header .my-name,
+.header .contact {
+    display: flex;
+    justify-content: center;
+    color: var(--my-color);
+}
+
+.header .my-name h2 {
+    margin: -10px 0px 10px 0px;
+}
+
+.sn-office {
+    display: flex;
+    justify-content: center;
+}
+
+.office {
+    position: relative;
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: var(--my-color);
+    color: white;
+}
+
+.office::before,
+.office::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.office::before {
+    left: -10px;
+    border-width: 15px 10px 15px 0px;
+    border-color: transparent var(--my-color) transparent transparent;
+    /* Màu mũi tên */
+}
+
+.office::after {
+    right: -10px;
+    border-width: 15px 1px 14px 10px;
+    border-color: transparent transparent transparent var(--my-color);
+    /* Màu mũi tên */
+}
+
+.line1,
+.line2 {
+    width: 40%;
+    height: 1px;
+    background-color: var(--my-color);
+    margin: 0 auto;
+    /* Căn giữa theo chiều ngang */
+}
+
+.line1 {
+    margin-bottom: 5px;
+    /* Khoảng cách giữa đường kẻ và nội dung */
+}
+
+.line2 {
+    margin-top: 5px;
+    /* Khoảng cách giữa đường kẻ và nội dung */
+}
+
+.content {
+    position: relative;
+    margin-top: 250px;
+}
+
+.left-third {
+
+    width: 33.33%;
+    height: calc(1754px - 253px);
+    background-color: var(--my-color);
+    float: left;
+
+}
+
+
+.right-two-thirds {
+    width: 66.66%;
+    height: calc(1754px - 253px);
+    background-color: rgb(255, 255, 255);
+    float: left;
+}
+
+/* end header */
+/* left-third-page */
+
+
+.logo img {
+    width: 200px;
+    /* Kích thước của hình ảnh */
+    height: 200px;
+    border-radius: 50%;
+    /* Điều này tạo ra hình tròn */
+    object-fit: cover;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    position: relative;
+
+}
+
+.hinh-tron {
+    width: 215px;
+    height: 215px;
+    background-color: rgb(154 37 37 / 15%);
+    border-radius: 50%;
+    z-index: 2;
+    margin-top: -120px;
+    border: solid 3px var(--my-color);
+    position: relative;
+    clip-path: circle(71% at 50% 0%);
+}
+
+.content-2 {
+    margin-top: 70px;
+    color: var(--color-text);
+}
+
+.text-title {
+    color: white;
+    font-weight: bold;
+
+}
+
+.text-left {
+    font-weight: bold;
+}
+
+.personal,
+.contact,
+.social,
+.reference {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.text-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {}
+
+.divider {
+    flex: 0 0 50%;
+    border-bottom: 2px solid var(--color-text);
+    margin: 5px 0;
+    width: 100%;
+}
+
+.seperate {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.divider1 {
+    width: 10%;
+    height: 1px;
+    /* Chiều cao của đoạn phân cách */
+    background-color: var(--color-text);
+    /* Màu của đoạn phân cách */
+}
+
+.divider2 {
+    width: 10%;
+    height: 1px;
+    /* Chiều cao của đoạn phân cách */
+    background-color: var(--color-text);
+    /* Màu của đoạn phân cách */
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+    background-color: var(--my-color);
+    transform: rotate(45deg);
+    margin: -1px 10px 0 10px;
+    border: solid 2px var(--color-text);
+}
+
+/* end left-third-page */
+/* right-two-page */
+
+.content-3 {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.text-title2 {
+    font-weight: bold;
+    color: var(--my-color);
+}
